@@ -5,7 +5,7 @@ const styles = {
     marginTop: 100,
     fontStyle: "Inter",
     borderStyle: "solid",
-    borderColor: "#7A7A7A",
+    borderColor: "#d3d3d3",
     borderWidth: "0.5px",
     opacity: 0, 
     transition: "opacity 2s ease" 
