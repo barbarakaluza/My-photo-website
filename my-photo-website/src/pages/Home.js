@@ -2,6 +2,7 @@ import React from "react";
 
 import Header from "../components/Header/Header";
 import Title from "../components/Title/Title";
+import Image from "../components/Image/Image";
 import Footer from "../components/Footer/Footer";
 
 
@@ -18,6 +19,7 @@ function Home() {
         <div style={styles}>
             <Header/>
             <Title/>
+            <Image/>
             <Footer/>
         </div>
     )
