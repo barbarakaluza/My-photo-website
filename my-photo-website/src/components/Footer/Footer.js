@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
     borderStyle: "solid",
-    borderColor: "#7A7A7A",
+    borderColor: "#d3d3d3",
     borderWidth: "0.5px",
     textAlign: "left",
     width: "100%",

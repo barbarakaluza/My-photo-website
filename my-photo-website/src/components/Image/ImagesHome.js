@@ -15,19 +15,17 @@ const styles = {
     
 }
 
-function Image() {
+function ImagesHome() {
 
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
-        // Po opóźnieniu 1 sekundy ustaw wartość isVisible na true, aby pokazać obrazki
         const timer = setTimeout(() => {
             setIsVisible(true);
         }, 1000);
 
-        // Zwracamy funkcję czyszczącą timer, aby uniknąć wycieków pamięci
         return () => clearTimeout(timer);
-    }, []); // Używamy pustej tablicy zależności, aby efekt został uruchomiony tylko raz
+    }, []); 
 
     return (
         <div>
@@ -38,14 +36,7 @@ function Image() {
         </div>
     )
 }
-    // return (
-    //     <div>
-    //         <img src={photo1} style={styles} alt="womenwithkid"/>
-    //         <img src={photo2} style={styles} alt="women"/>
-    //         <img src={photo3} style={styles} alt="pregnancy"/>
-    //         <img src={photo4} style={styles} alt="pregnancy"/>
-    //     </div>
-    // )
+    
 
 
-export default Image;
+export default ImagesHome;

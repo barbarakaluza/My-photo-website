@@ -2,15 +2,15 @@ import React from "react";
 
 import Header from "../components/Header/Header";
 import Title from "../components/Title/Title";
-import Image from "../components/Image/Image";
+import ImagesHome from "../components/Image/ImagesHome";
 import Footer from "../components/Footer/Footer";
 
 
 const styles = {
     display: "flex",
-    flexDirection: "column", // Aby elementy były ustawione w kolumnie
-    justifyContent: "center", // Wyśrodkowanie w pionie
-    alignItems: "center", // Wyśrodkowanie w poziomie
+    flexDirection: "column", 
+    justifyContent: "center", 
+    alignItems: "center", 
     minHeight: "50vh"
 }
 
@@ -19,7 +19,7 @@ function Home() {
         <div style={styles}>
             <Header/>
             <Title/>
-            <Image/>
+            <ImagesHome/>
             <Footer/>
         </div>
     )

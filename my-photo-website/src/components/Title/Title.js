@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 const styles = {
     width: "600px",
@@ -6,7 +6,9 @@ const styles = {
     fontStyle: "Inter",
     borderStyle: "solid",
     borderColor: "#7A7A7A",
-    borderWidth: "0.5px"
+    borderWidth: "0.5px",
+    opacity: 0, 
+    transition: "opacity 2s ease" 
 
 }
 
@@ -20,14 +22,25 @@ const paraTitle = {
     marginTop: 0
 }
 
+
+
 function Title() {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setIsVisible(true);
+        }, 1000);
+
+        return () => clearTimeout(timer);
+    }, []); 
+
     return (
-        <div style={styles}>
+        <div style={{ ...styles, opacity: isVisible ? 1 : 0 }}>
             <h1 style={title}>Basia Kałuża Foto</h1>
             <p style={paraTitle}>FOTOGRAFIA KOBIECA | RODZINNA</p>
         </div>
     )
 }
-
 
 export default Title;
