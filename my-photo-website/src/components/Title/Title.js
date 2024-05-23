@@ -2,7 +2,7 @@ import React from "react";
 
 const styles = {
     width: "600px",
-    marginTop: 80,
+    marginTop: 100,
     fontStyle: "Inter",
     borderStyle: "solid",
     borderColor: "#7A7A7A",

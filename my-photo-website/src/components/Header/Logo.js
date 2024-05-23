@@ -8,10 +8,13 @@ const logoWraperStyles = {
     top: "0",
     left: "0",
     padding: "10px",
+    marginLeft: "10px"
 }
 
+
+
 const styles = {
-    width: "100px",
+    width: "120px",
     height: "auto",
 }
 
