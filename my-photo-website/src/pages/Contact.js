@@ -7,7 +7,10 @@ import Footer from "../components/Footer/Footer";
 
 
 const containerStyles = {
-    
+    fontFamily: "Merriweather",
+    fontWeight: 300,
+    fontStyle: "normal",
+    letterSpacing: "2px",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
