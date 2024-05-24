@@ -1,0 +1,11 @@
+.img {
+    width: 200px;
+    height: auto;
+    margin: 50px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.visible {
+    opacity: 1;
+}

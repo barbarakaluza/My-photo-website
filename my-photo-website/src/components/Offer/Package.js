@@ -8,9 +8,9 @@ const packages = {
     display: 'flex',
     justifyContent: "center",
     alignItems: 'center',
-    height: '100vh',
-    marginTop: 20,
-    opacity: 0, 
+    minHeight: '100vh',  // Use minHeight instead of height
+    overflow: 'hidden',  // Hide overflow to remove scrollbar
+    opacity: 0,
     transition: "opacity 2s ease",
 }
 
@@ -31,7 +31,7 @@ const wrapper = {
     borderWidth: "0.5px",
     padding: 20,
     width: 300,
-    margin: 40,
+    margin: 20
 }
 
 const listStyle = {
